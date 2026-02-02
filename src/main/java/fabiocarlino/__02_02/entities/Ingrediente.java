@@ -6,4 +6,8 @@ public class Ingrediente extends Prodotto {
         super(name, calories, price);
     }
 
+    @Override
+    public String toString() {
+        return "Ingrediente{}";
+    }
 }

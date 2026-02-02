@@ -9,5 +9,19 @@ public class Pizza extends Prodotto {
         super(name, calories, price);
         this.ingrediente = ingrediente;
     }
-    
+
+    public List<Ingrediente> getIngrediente() {
+        return ingrediente;
+    }
+
+    public void setIngrediente(List<Ingrediente> ingrediente) {
+        this.ingrediente = ingrediente;
+    }
+
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "ingrediente=" + ingrediente +
+                '}';
+    }
 }
