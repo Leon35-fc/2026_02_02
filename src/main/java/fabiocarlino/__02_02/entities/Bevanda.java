@@ -6,8 +6,15 @@ public class Bevanda extends Prodotto {
         super(name, calories, price);
     }
 
+    public String toStringall() {
+        return "Bevanda{" +
+                "nome: " + this.getName() +
+                "calorie: " + this.getCalories() +
+                "prezzo: " + this.getPrice();
+    }
+
     @Override
     public String toString() {
-        return "Bevanda{}";
+        return "Bevanda{}" + this.getName();
     }
 }

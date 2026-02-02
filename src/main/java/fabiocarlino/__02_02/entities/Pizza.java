@@ -5,7 +5,7 @@ import java.util.List;
 public class Pizza extends Prodotto {
     private List<Ingrediente> ingrediente;
 
-    public Pizza(String name, int calories, int price, List<Ingrediente> ingrediente) {
+    public Pizza(String name, int calories, double price, List<Ingrediente> ingrediente) {
         super(name, calories, price);
         this.ingrediente = ingrediente;
     }
@@ -20,8 +20,9 @@ public class Pizza extends Prodotto {
 
     @Override
     public String toString() {
-        return "Pizza{" +
-                "ingrediente=" + ingrediente +
-                '}';
+        return "\nPizza{" +
+                "nome=" + getName() +
+                ", ingredienti=" + getIngrediente() +
+                " }";
     }
 }

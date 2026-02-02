@@ -1,6 +1,6 @@
 package fabiocarlino.__02_02;
 
-import fabiocarlino.__02_02.entities.Pizza;
+import fabiocarlino.__02_02.entities.Menu;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,9 +12,11 @@ public class Application {
 
         SpringApplication.run(Application.class, args);
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(__02_02Application.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
 
-        Pizza pizza1 = context.getBean(Pizza.class);
+        Menu menu = context.getBean(Menu.class);
+
+        System.out.println(menu);
     }
 
 }
