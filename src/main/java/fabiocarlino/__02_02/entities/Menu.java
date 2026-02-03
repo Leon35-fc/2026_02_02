@@ -22,9 +22,8 @@ public class Menu {
     @Override
     public String toString() {
         return "Menu{" +
-                "pizze=" + pizzaList +
-                "\ningredienti=" + ingredienteList +
-                "\nbevande=" + bevandaList +
-                '}';
+                "\n\n*****Pizze*****\n" + pizzaList +
+                "\n\n*****Ingredienti*****\n" + ingredienteList +
+                "\n\n*****Bevande*****\n" + bevandaList;
     }
 }

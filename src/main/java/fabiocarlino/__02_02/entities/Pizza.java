@@ -20,9 +20,9 @@ public class Pizza extends Prodotto {
 
     @Override
     public String toString() {
-        return "\nPizza{" +
-                "nome=" + getName() +
-                ", ingredienti=" + getIngrediente() +
-                " }";
+        return "\n" + getName() +
+                ", " + getIngrediente() +
+                ", " + getCalories() +
+                "Cal, " + getPrice();
     }
 }

@@ -8,8 +8,6 @@ public class Ingrediente extends Prodotto {
 
     @Override
     public String toString() {
-        return
-//                "Ingrediente: " +
-                this.getName();
+        return "\n" + this.getName() + ", " + this.getCalories() + " Cal, " + this.getPrice();
     }
 }

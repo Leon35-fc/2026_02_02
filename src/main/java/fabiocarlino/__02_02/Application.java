@@ -16,6 +16,8 @@ public class Application {
 
         Menu menu = context.getBean(Menu.class);
 
+//        Pizza margherita = context.getBean("margherita", Pizza.class);
+
         System.out.println(menu);
     }
 
